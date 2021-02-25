@@ -11,29 +11,28 @@
     "jupyterlab-extension"
   ],
   "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "build:all" : "npm-run-all build:lib build:extension",
-      "build:lib": "babel src --out-dir lib",
-      "build:extension": "cd jupyterlab_scheduler && mkdirp labextension && cd labextension && npm pack ../../",
-      "watch": "babel src --out-dir lib --watch"
-     },
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:all": "npm-run-all build:lib build:extension",
+    "build:lib": "babel src --out-dir lib",
+    "build:extension": "cd jupyterlab_scheduler && mkdirp labextension && cd labextension && npm pack ../../",
+    "watch": "babel src --out-dir lib --watch"
+  },
   "dependencies": {
-    "@jupyterlab/mainmenu": "^2.2.1",
+    "@jupyterlab/mainmenu": "^3.0.0",
     "@lumino/widgets": "^1.13.4",
     "core-js": "^3.1.0",
     "@jupyter-widgets/base": "^2.0.1",
     "@jupyter-widgets/controls": "^1.5.0",
     "@jupyter-widgets/jupyterlab-manager": "^1.0.0",
     "@jupyter-widgets/output": "^2.0.0",
-    "@jupyterlab/coreutils": "^4.0.2",
+    "@jupyterlab/coreutils": "^5.0.0",
     "@jupyterlab/outputarea": "^1.0.0",
-    "@jupyterlab/rendermime": "^2.0.2",
-    "@jupyterlab/services": "^5.0.2",
+    "@jupyterlab/rendermime": "^3.0.0",
+    "@jupyterlab/services": "^6.0.0",
     "cron-parser": "2.16.3",
     "react-lazylog": "4.5.3"
   },
   "devDependencies": {
-
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
